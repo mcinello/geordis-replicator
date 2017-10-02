@@ -40,7 +40,6 @@ class Replicator
   # and then manually execute each method to ensure
   # it returns what's expect.
   def replicate(recipe)
-
     # Setup an instance variable for the recipe
     # so that other methods can see what the recipe is
     @recipe = recipe
@@ -96,6 +95,7 @@ class Replicator
   end
 
   def glass_inside_replicator
+
     # This reaches into the @inside_replicator location instance
     # and then into the `contents` of that instance, which is an array
     # and obtains the first element of that array.
