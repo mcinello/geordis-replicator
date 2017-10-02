@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -40,7 +42,6 @@ class Replicator
   # and then manually execute each method to ensure
   # it returns what's expect.
   def replicate(recipe)
-
     # Setup an instance variable for the recipe
     # so that other methods can see what the recipe is
     @recipe = recipe
@@ -61,9 +62,9 @@ class Replicator
     # shoud contain the proper ingredients.
 
     # To retrieve the glass from inside the replicator, use:
-    #   glass_inside_replicator
+      # glass_inside_replicator
     # And then to see what's inside the glass, use:
-    #   glass_inside_replicator.inside.contents
+      # glass_inside_replicator.inside.contents
     transport_ingredients_to_glass
 
     # This methods mixes the ingredients in the glass around.
@@ -77,6 +78,7 @@ class Replicator
     # If you read back `glass.temperature`, then it should be set
     # to the temperature the recipe calls for if this method executed properly.
     adjust_temperature
+
 
     # This method moves the glass from @inside_replicator to @plate
     # so that the character can pick it up and drink it.
