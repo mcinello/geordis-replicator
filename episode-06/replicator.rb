@@ -1,5 +1,5 @@
 class Replicator
-
+  require 'pry'
   # When the Enterprise calls Replicator.new, this method executes.
   def initialize(enterprise)
 
